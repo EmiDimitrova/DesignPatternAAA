@@ -1,1 +1,1 @@
-# DesignPatternAAA
+# QA-Automation-Course-Exercise
