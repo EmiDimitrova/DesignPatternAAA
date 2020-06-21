@@ -6,7 +6,8 @@ namespace DemoQAExercise.Pages
 {
     public class InteractionPageSection : BasePage
     {
-        public InteractionPageSection(IWebDriver driver) : base(driver)
+        public InteractionPageSection(IWebDriver driver) 
+            : base(driver)
         {
         }
 

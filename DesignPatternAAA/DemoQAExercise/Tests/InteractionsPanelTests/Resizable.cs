@@ -24,9 +24,9 @@ namespace DemoQAExercise.Tests.InteractionsPanel
         public void Test3_1_Resizable_MinimumCheck()
         {
             Thread.Sleep(500);
-            Builder.ClickAndHold(_resizablePage.resizableHandle).MoveByOffset(-50, -50).Release().Perform();
+            Builder.ClickAndHold(_resizablePage.ResizableHandle).MoveByOffset(-50, -50).Release().Perform();
 
-            _resizablePage.AssertResizableHandlePositionToMinimum(_resizablePage.resizableHandle.Location.X);
+            _resizablePage.AssertResizableHandlePositionToMinimum();
         }
 
 
@@ -34,9 +34,9 @@ namespace DemoQAExercise.Tests.InteractionsPanel
         public void Test3_2_Resizable_MaximumCheck()
         {
             Thread.Sleep(500);
-            Builder.ClickAndHold(_resizablePage.resizableHandle).MoveByOffset(300, 100).Release().Perform();
+            Builder.ClickAndHold(_resizablePage.ResizableHandle).MoveByOffset(300, 100).Release().Perform();
 
-            _resizablePage.AssertResizableHandlePositionToMaximum(_resizablePage.resizableHandle.Location.X);
+            _resizablePage.AssertResizableHandlePositionToMaximum();
 
         }
 

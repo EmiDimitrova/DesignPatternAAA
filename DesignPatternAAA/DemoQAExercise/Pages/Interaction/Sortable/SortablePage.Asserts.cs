@@ -7,12 +7,12 @@ namespace DemoQAExercise.Pages.Interaction.Sortable
 
         public void AssertSortableObjectPositionIsChangedGrid(string txt)
         {
-            Assert.AreEqual("Two", sortableObjectGridPosition.Text);
+            Assert.AreEqual("Two", SortableObjectGridPosition.Text);
         }
 
         public void AssertSortableObjectPositionIsChanged(int index)
         {
-            Assert.AreEqual("Two", listOfOptionsList[index + 1].Text);
+            Assert.AreEqual("Two", ListOfOptionsList[index + 1].Text);
         }
     }
 }

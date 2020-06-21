@@ -22,12 +22,12 @@ namespace DemoQAExercise.Tests.InteractionsPanel
         [Test]
         public void Test1_1_ObjectIsDragable()
         {
-            var sourcePositionXBefore = _draggablePage.dragableObject.Location.X;
+            var sourcePositionXBefore = _draggablePage.DragableObject.Location.X;
 
             Thread.Sleep(500);
-            Builder.DragAndDropToOffset(_draggablePage.dragableObject, 224, 102).Release().Perform();
+            Builder.DragAndDropToOffset(_draggablePage.DragableObject, 224, 102).Release().Perform();
 
-            var sourcePositionXAfter = _draggablePage.dragableObject.Location.X;
+            var sourcePositionXAfter = _draggablePage.DragableObject.Location.X;
 
             _draggablePage.AssertDraggablePositionIsChanged(sourcePositionXBefore, sourcePositionXAfter);
         }
@@ -36,9 +36,9 @@ namespace DemoQAExercise.Tests.InteractionsPanel
         public void Test1_2_MoveDraggableToLeftTopCorner()
         {
             Thread.Sleep(500);
-            Builder.DragAndDropToOffset(_draggablePage.dragableObject, -273, -313).Release(_draggablePage.dragableObject).Perform();
+            Builder.DragAndDropToOffset(_draggablePage.DragableObject, -273, -313).Release(_draggablePage.DragableObject).Perform();
 
-            var sourcePositionXAfter = _draggablePage.dragableObject.Location.X;
+            var sourcePositionXAfter = _draggablePage.DragableObject.Location.X;
 
             _draggablePage.AssertDraggableMovedToTopLeftCorner(sourcePositionXAfter);
         }
@@ -47,9 +47,9 @@ namespace DemoQAExercise.Tests.InteractionsPanel
         public void Test1_3_MoveDraggableToBottom()
         {
             Thread.Sleep(500);
-            Builder.DragAndDropToOffset(_draggablePage.dragableObject, 275, 355).Release(_draggablePage.dragableObject).Perform();
+            Builder.DragAndDropToOffset(_draggablePage.DragableObject, 275, 355).Release(_draggablePage.DragableObject).Perform();
 
-            var sourcePositionYAfter = _draggablePage.dragableObject.Location.Y;
+            var sourcePositionYAfter = _draggablePage.DragableObject.Location.Y;
 
             _draggablePage.AssertDraggableMovedToBottom(sourcePositionYAfter);
 

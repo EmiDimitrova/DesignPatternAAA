@@ -4,14 +4,14 @@ namespace DemoQAExercise.Pages.Interaction.Resizable
 {
     public partial class ResizablePage : InteractionPageSection
     {
-        public void AssertResizableHandlePositionToMinimum(int x)
+        public void AssertResizableHandlePositionToMinimum()
         {
-            Assert.AreEqual(550, resizableHandle.Location.X, 5);
+            Assert.AreEqual(550, ResizableHandle.Location.X, 5);
         }
 
-        public void AssertResizableHandlePositionToMaximum(int x)
+        public void AssertResizableHandlePositionToMaximum()
         {
-            Assert.AreEqual(900, resizableHandle.Location.X, 5);
+            Assert.AreEqual(900, ResizableHandle.Location.X, 5);
         }
     }
 }

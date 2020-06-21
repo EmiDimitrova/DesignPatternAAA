@@ -26,9 +26,9 @@ namespace DemoQAExercise.Tests.InteractionsPanel
             _selectablePage.PageLoad();
 
             Thread.Sleep(500);
-            Builder.Click(_selectablePage.selectableObjectList).Release().Perform();
+            Builder.Click(_selectablePage.SelectableObjectList).Release().Perform();
 
-            var colorAfter = _selectablePage.selectableObjectList.GetCssValue("background-color");
+            var colorAfter = _selectablePage.SelectableObjectList.GetCssValue("background-color");
 
             _selectablePage.AssertSelectableObjectBackgroundColorChanged(colorAfter);
         }
@@ -37,13 +37,13 @@ namespace DemoQAExercise.Tests.InteractionsPanel
         [Test]
         public void Test4_2_ObjectIsSelectable_GridMenu()
         {
-            _selectablePage.menuGridNavigationSelectable.Click();
+            _selectablePage.MenuGridNavigationSelectable.Click();
             _selectablePage.PageLoad();
 
             //Thread.Sleep(500);
-            Builder.Click(_selectablePage.selectableObjectGrid).Release().Perform();
+            Builder.Click(_selectablePage.SelectableObjectGrid).Release().Perform();
 
-            var colorAfter = _selectablePage.selectableObjectGrid.GetCssValue("background-color");
+            var colorAfter = _selectablePage.SelectableObjectGrid.GetCssValue("background-color");
 
             _selectablePage.AssertSelectableObjectBackgroundColorChanged(colorAfter);
         }

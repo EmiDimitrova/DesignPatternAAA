@@ -23,12 +23,12 @@ namespace DemoQAExercise.Tests.InteractionsPanel
         [Test]
         public void Test5_1_ObjectIsSortable_GridMenu()
         {
-            _sortablePage.menuGridNavigationSortable.Click();
+            _sortablePage.MenuGridNavigationSortable.Click();
 
             Thread.Sleep(1000);
-            Builder.ClickAndHold(_sortablePage.sortableSourceObjectGrid).MoveToElement(_sortablePage.sortableTargetObjectGrid).Release().Perform();
+            Builder.ClickAndHold(_sortablePage.SortableSourceObjectGrid).MoveToElement(_sortablePage.SortableTargetObjectGrid).Release().Perform();
 
-            _sortablePage.AssertSortableObjectPositionIsChangedGrid(_sortablePage.sortableObjectGridPosition.Text);
+            _sortablePage.AssertSortableObjectPositionIsChangedGrid(_sortablePage.SortableObjectGridPosition.Text);
         }
 
         [Test]
@@ -37,7 +37,7 @@ namespace DemoQAExercise.Tests.InteractionsPanel
             var index = 1;
 
             Thread.Sleep(1000);
-            Builder.DragAndDropToOffset(_sortablePage.listOfOptionsList[index], 0, 50).Perform();
+            Builder.DragAndDropToOffset(_sortablePage.ListOfOptionsList[index], 0, 50).Perform();
 
             _sortablePage.AssertSortableObjectPositionIsChanged(index);
         }

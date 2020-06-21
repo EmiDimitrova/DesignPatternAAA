@@ -10,7 +10,8 @@ namespace DemoQAExercise.Pages.GoogleSearchPage
 {
     public class GoogleSearchPage : BasePage
     {
-        public GoogleSearchPage(IWebDriver driver) : base(driver)
+        public GoogleSearchPage(IWebDriver driver) 
+            : base(driver)
         {
 
         }

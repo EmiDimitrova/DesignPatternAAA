@@ -7,7 +7,8 @@ namespace OldHomeworks.Pages.AutomationPracticePage
 {
     public partial class AutomationPracticePage : BasePage
     {
-        public AutomationPracticePage(IWebDriver driver) : base(driver)
+        public AutomationPracticePage(IWebDriver driver) 
+            : base(driver)
         {
             
         }

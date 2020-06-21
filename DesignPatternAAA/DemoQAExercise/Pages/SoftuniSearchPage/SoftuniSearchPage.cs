@@ -9,7 +9,8 @@ namespace DemoQAExercise.Pages.SoftuniSearchPage
 {
     public class SoftuniSearchPage : BasePage
     {
-        public SoftuniSearchPage(IWebDriver driver) : base(driver)
+        public SoftuniSearchPage(IWebDriver driver) 
+            : base(driver)
         {
         }
 

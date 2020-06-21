@@ -17,12 +17,12 @@ namespace DemoQAExercise.Pages.Interaction.Droppable
 
         public void AssertDroppableSourceBoxTextCheck(string message)
         {
-            Assert.AreEqual("Drop here", messageText.Text);
+            Assert.AreEqual("Drop here", MessageText.Text);
         }
 
         public void AssertDroppableSourceBoxTextIsChanged(string message)
         {
-            Assert.AreEqual("Dropped!", messageText.Text);
+            Assert.AreEqual("Dropped!", MessageText.Text);
         }
     }
 }

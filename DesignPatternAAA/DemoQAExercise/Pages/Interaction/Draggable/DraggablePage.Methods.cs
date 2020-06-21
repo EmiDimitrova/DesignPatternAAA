@@ -4,7 +4,8 @@ namespace DemoQAExercise.Pages.Interaction.Draggable
 {
     public partial class DraggablePage : InteractionPageSection
     {
-        public DraggablePage(IWebDriver driver) : base(driver) 
+        public DraggablePage(IWebDriver driver) 
+            : base(driver) 
         {
 
         }
